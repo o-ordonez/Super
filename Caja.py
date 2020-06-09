@@ -1,10 +1,13 @@
 from Base import Productos
+import datetime
 
 # variables que se van a usar
+Titulos = ["ID", "Articulo", "Unidad", "P.Unit", "Cantidad", "Total"]
 Total = 0
 Venta_tot = []
 Articulo = str(input("Que articulo desea registrar: ").upper())
-
+Fecha = str(datetime.date.today())
+print()
 # loop para introducir todos los articulos que se van a vender
 while Articulo != "PAGAR":
     try:
@@ -12,9 +15,10 @@ while Articulo != "PAGAR":
         Cantidad = int(input("Cuantos articulos: "))
         Venta = Productos[Articulo]
         Sub_total = PUnitario * Cantidad
-        Venta.append(Sub_total)
+        Venta.extend((Cantidad, Sub_total, Fecha))
         Total += Sub_total
         Venta_tot.append(Venta)
+
     except:
         print("Este articulo no existe, intenta con otro")
     finally:
@@ -23,7 +27,14 @@ while Articulo != "PAGAR":
 # finaliza la lista añade el total de la venta e imprime
 Cuenta = ["", "Total", "", "", Total]
 Venta_tot.append(Cuenta)
-Titulos = ["ID", "Articulo", "Unidad", "P.Unit", "Total"]
 print(Titulos)
+bd = open("Cons_ventas.txt", "a")
 for item in Venta_tot:
+    bd.write("\n")
+    item = str(item)
+    bd.write(item)
     print(item)
+    """for word in item:p
+        word = str(word)
+        bd.write(word + ",")"""
+bd.close()
