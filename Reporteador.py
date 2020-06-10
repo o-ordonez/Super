@@ -1,12 +1,18 @@
-# Abre archivo y añade las ventas realizadas
-LisdeProd = ["PEPITA", "CACAHUATE"]
+# Reporte Unidades venididas, venta$,  por articul
+LisdeProd = [1, 2, 3, 4]
 for Prod in LisdeProd:
     Prodsum = 0
+    Prodvent = 0
     with open("Cons_ventas.txt") as file:
-        print(Prod)
         for line in file:
-            s = line.split(",")
-            comparable = str(s[1]).upper()
-            if comparable == Prod:
-                Prodsum += int(s[4])
-        print(f"El total de {Prod} es: {Prodsum}")
+            try:
+                s = line.split(",")
+                comparable = int(s[1])
+            except:
+                comparable = 0
+            finally:
+                if comparable == Prod:
+                    Prodsum += int(s[5])
+                    Prodvent += int(s[6])
+                    Prodnom = s[2]
+        print(f"El total de {Prodnom} es: {Prodsum} por un total de ${Prodvent}")

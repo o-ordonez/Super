@@ -7,11 +7,10 @@ Total = 0
 Venta_tot = []
 Articulo = str(input("Que articulo desea registrar: ").upper())
 Fecha = str(datetime.date.today())
-print()
 # loop para introducir todos los articulos que se van a vender
 while Articulo != "PAGAR":
     try:
-        PUnitario = Productos[Articulo][3]
+        PUnitario = Productos[Articulo][4]
         Cantidad = int(input("Cuantos articulos: "))
         Venta = Productos[Articulo]
         Sub_total = PUnitario * Cantidad
@@ -25,16 +24,14 @@ while Articulo != "PAGAR":
         Articulo = str(input("Siguiente articulo o pagar: ").upper())
 
 # finaliza la lista añade el total de la venta e imprime
-Cuenta = ["", "Total", "", "", Total]
+Cuenta = ["", 0, "Total", "", "", Total]
 Venta_tot.append(Cuenta)
 print(Titulos)
 bd = open("Cons_ventas.txt", "a")
 for item in Venta_tot:
+
     bd.write("\n")
     item = str(item)
     bd.write(item)
     print(item)
-    """for word in item:p
-        word = str(word)
-        bd.write(word + ",")"""
 bd.close()

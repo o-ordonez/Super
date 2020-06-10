@@ -1,4 +1,9 @@
-[ID,ARTICULO,UNIDAD,P.UNITARIO,1000,TOTAL,FECHA]
-[3,Pepita,GR,17,10,170,'2020-06-09']
-[1,Cacahuate,GR,10,5,50,'2020-06-09']
-[1,Cacahuate,GR,10,60,50,'2020-06-09']
+,ID,ARTICULO,UNIDAD,P.UNITARIO,CANTIDAD,TOTAL,FECHA
+['', 4, 'Azucar', 'GR', 17, 10, 170, '2020-06-10']
+['', 2, 'Amaranto', 'GR', 15, 5, 75, '2020-06-10']
+['', 1, 'Cacahuate', 'GR', 10, 98, 980, '2020-06-10']
+['', 3, 'Pepita', 'GR', 17, 34, 578, '2020-06-10']
+['', 0, 'Total', '', '', 1803]
+['', 4, 'Azucar', 'GR', 17, 10, 170, '2020-06-10']
+['', 3, 'Pepita', 'GR', 17, 125, 2125, '2020-06-10']
+['', 0, 'Total', '', '', 2295]
