@@ -2,7 +2,7 @@ from Base import Productos
 import datetime
 
 # variables que se van a usar
-Titulos = ["ID", "Articulo", "Unidad", "P.Unit", "Cantidad", "Total"]
+Titulos = ["ID", "Articulo", "Unidad", "P.Venta", "Cantidad", "Total"]
 Total = 0
 Venta_tot = []
 Articulo = str(input("Que articulo desea registrar: ").upper())
@@ -29,7 +29,6 @@ Venta_tot.append(Cuenta)
 print(Titulos)
 bd = open("Cons_ventas.txt", "a")
 for item in Venta_tot:
-
     bd.write("\n")
     item = str(item)
     bd.write(item)
