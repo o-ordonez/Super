@@ -28,5 +28,5 @@ for Prod in LisdeProd:
                 if comparable == Prod:
                     Inventario += int(s[5])
     print(
-        f"El total de {Prodnom} es: {Sumcant} por un total de ${Sumdinero} e ingresaron {Inventario}, I.final {Inventario-Sumcant} "
+        f"Ingresaron {Inventario} pzas de {Prodnom} y se vendieron {Sumcant} pzas por un total de ${Sumdinero} hay un I.final de {Inventario-Sumcant} pzas "
     )

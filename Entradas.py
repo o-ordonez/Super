@@ -1,18 +1,3 @@
-"""from Base import Productos
-
-Artent = input("Que articulo quieres ingresar:").upper()
-Lisent = []
-PCompra = int(input("Precio de compra: "))
-Cantidad = int(input("Cuantos articulos van a ingresar: "))
-Ctot = PCompra * Cantidad
-Ent = Productos[Artent]
-Ent.extend((Cantidad, PCompra, Ctot))
-Lisent.append(Ent)
-Tit = ["", "ID", "ARTICULO", "UNIDAD", "P.VENTA", "CANTIDAD", "COSTO", "C.TOTAL"]
-print(Tit)
-print(Lisent)"""
-
-
 from Base import Productos
 import datetime
 

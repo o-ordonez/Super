@@ -27,6 +27,7 @@ while Articulo != "PAGAR":
 Cuenta = ["", 0, "Total", "", "", Total]
 Venta_tot.append(Cuenta)
 print(Titulos)
+# abre archivo y añade los registros de los articulos vendidos
 bd = open("Cons_ventas.txt", "a")
 for item in Venta_tot:
     bd.write("\n")
