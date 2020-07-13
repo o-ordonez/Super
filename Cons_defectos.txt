@@ -1,0 +1,2 @@
+, ID, Articulo, Unidad, P.Venta, Cantidad, Costo, C.Total, Fecha
+['', 4, 'Azucar', 'GR', 17, 10, '', '']

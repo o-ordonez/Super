@@ -1,5 +1,5 @@
-, ID, Articulo, Unidad, P.Venta, Cantidad, Costo, C.Total
-['', 4, 'Azucar', 'GR', 17, 100, 10, 1000]
-['', 3, 'Pepita', 'GR', 17, 100, 15, 1500]
-['', 2, 'Amaranto', 'GR', 15, 100, 12, 1200]
-['', 1, 'Cacahuate', 'GR', 10, 100, 20, 2000]
+, ID, Articulo, Unidad, P.Venta, Cantidad, Costo, C.Total, Fecha
+['', 4, 'Azucar', 'GR', 17, 100, 10, 1000,2020-06-10]
+['', 3, 'Pepita', 'GR', 17, 100, 15, 1500,2020-06-10]
+['', 2, 'Amaranto', 'GR', 15, 100, 12, 1200,2020-06-10]
+['', 1, 'Cacahuate', 'GR', 10, 100, 20, 2000,2020-06-10]
